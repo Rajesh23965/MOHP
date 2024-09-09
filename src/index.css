@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1a202c;
+  --color-secondary: #2d3748;
+  --color-accent: #4a5568;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .slide {
+    display: none;
+  }
+
+  .slick-active {
+    display: block !important;
+  }
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 20px;
+  color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff0000; /* Customize active dot color */
+}
+
+/* Custom styles for the dots */
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots li button:before {
+  font-size: 25px;
+  color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff0000; /* Customize active dot color */
+}
